@@ -7,42 +7,42 @@ const navItems = [
     {
         to: '/ai',
         label: 'Dashboard',
-        icon:House
+        Icon:House
     },
     {
          to: '/ai/write-article',
         label: 'Write Article',
-        icon:SquarePen
+        Icon:SquarePen
     },
      {
          to: '/ai/blog-titles',
         label: 'Blog Titles',
-        icon:Hash
+        Icon:Hash
     },
       {
          to: '/ai/generate-images',
         label: 'Generate Images',
-        icon:Image
+        Icon:Image
     },
        {
          to: '/ai/remove-background',
         label: 'Remove Background',
-        icon:Eraser
+        Icon:Eraser
     },
         {
          to: '/ai/remove-object',
         label: 'Remove Object',
-        icon:Scissors
+        Icon:Scissors
     },
          {
          to: '/ai/review-resume',
         label: 'Review Resume',
-        icon:FileText
+        Icon:FileText
     },
           {
          to: '/ai/community',
         label: 'Community',
-        icon:Users
+        Icon:Users
     },
 ]
 
@@ -57,7 +57,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                 <h1 className='mt-1 text-center'>{user.fullName}</h1>
                 <div>
                     {navItems.map(({to,label,Icon}) => (
-                        <NavLink key={to} to={to} end={to === '/ai'} onClick={() => setSidebar(false)} className={({ isActive })=>`px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6 to-[#9234EA text-white' :
+                        <NavLink key={to} to={to} end={to === '/ai'} onClick={() => setSidebar(false)} className={({ isActive })=>`px-3.5 py-2.5 flex items-center gap-3 rounded ${isActive ? 'bg-gradient-to-r from-[#3C81F6] to-[#9234EA] text-white' :
                         ''
                         }`}>
                             {
@@ -67,7 +67,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                                         {label}
                                     </>
                                 )
-                                    }
+                             }
                         </NavLink>
                     ))}
                 </div>
